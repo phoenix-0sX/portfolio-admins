@@ -3,7 +3,7 @@
 namespace App\Concerns;
 
 use App\Models\User;
-use Illuminate\Contracts\Validation\ValidationRule;
+// use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Validation\Rule;
 
 trait ProfileValidationRules
@@ -17,6 +17,7 @@ trait ProfileValidationRules
     {
         return [
             'name' => $this->nameRules(),
+            'fullname' => $this->nameRules(),
             'email' => $this->emailRules($userId),
         ];
     }
