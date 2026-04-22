@@ -19,7 +19,7 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
     'name',
     'email',
     'password',
-    'full_name',
+    'fullname',
     'phone',
     'birthdate',
     'photo_hash_id',
