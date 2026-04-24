@@ -32,26 +32,26 @@
                             <x-arrow-right-icon />
                         </a>
                     @endif
-                    <a href="{{ route('login') }}"
+                    <a href="{{ auth()->check() ? route('dashboard') : route('login') }}"
                         class="border text-zinc-900 hover:bg-zinc-100 hover:shadow dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-900  align-middle rounded-xl py-4 px-6">
                         Start building
                     </a>
                 </div>
 
-                {{-- TODO: The following commented section will be used later for App rating and users counts.  --}}
-                {{-- <div class="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
+                {{-- TODO: uncomment this section and use it when app finally sailed in prod and have many users --}}
+                {{-- <div class="mt-10 flex flex-wrap items-center gap-6 text-sm text-zinc-500 dark:text-zinc-300">
                     <div>
-                        <p class="text-2xl font-semibold text-foreground">12k+</p>
+                        <p class="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">12k+</p>
                         <p>Portfolios created</p>
                     </div>
-                    <div class="h-10 w-px border-r"></div>
+                    <div class="hidden h-10 w-px border-r border-zinc-200 dark:border-zinc-700 sm:block"></div>
                     <div>
-                        <p class="text-2xl font-semibold text-foreground">4.9★</p>
+                        <p class="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">4.9★</p>
                         <p>User satisfaction</p>
                     </div>
-                    <div class="h-10 w-px border-r"></div>
+                    <div class="hidden h-10 w-px border-r border-zinc-200 dark:border-zinc-700 sm:block"></div>
                     <div>
-                        <p class="text-2xl font-semibold text-foreground">100%</p>
+                        <p class="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">100%</p>
                         <p>You own your data</p>
                     </div>
                 </div> --}}

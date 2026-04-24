@@ -1,16 +1,17 @@
-<header class="sticky top-0 z-50 w-full border-b dark:border-zinc-700 text-sm mb-6 not-has-[nav]:hidden">
+<header
+    class="sticky top-0 z-50 w-full border-b dark:border-zinc-700 backdrop-blur-xl text-sm mb-6 not-has-[nav]:hidden">
     @if (Route::has('login'))
-        <nav class="flex h-16 mx-8 items-center justify-between">
+        <nav class="flex h-16 mx-4 md:mx-8 items-center justify-between">
             <a href="#"
                 class="flex items-center gap-3 font-semibold text-zinc-600 hover:text-zinc-500 dark:text-zinc-100 dark:hover:text-zinc-300">
-                <x-app-logo-icon class="size-8 fill-current text-black dark:text-white" />
-                <span class="text-lg tracking-tight">{{ config('app.name', 'Folio Manager') }}</span>
+                <x-app-logo-icon class="size-5 md:size-8 fill-current text-black dark:text-white" />
+                <span class="md:text-lg tracking-tight">{{ config('app.name', 'Folio Manager') }}</span>
             </a>
 
             <div class="hidden md:flex items-center gap-8 text-slate-600/70 dark:text-slate-300 font-medium">
                 <a href="#features" class="hover:text-zinc-700 dark:hover:text-slate-300/70">Features</a>
                 <a href="#how" class="hover:text-zinc-700 dark:hover:text-slate-300/70">How it works</a>
-                <a href="#cta" class="hover:text-zinc-700 dark:hover:text-slate-300/70">Get started</a>
+                <a href="#cta" class="hover:text-zinc-700 dark:hover:text-slate-300/70">Contact</a>
             </div>
 
             <div class="flex items-center gap-2 font-semibold text-zinc-600 dark:text-zinc-100">
