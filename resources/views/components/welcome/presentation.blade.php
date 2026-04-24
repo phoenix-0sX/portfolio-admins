@@ -8,15 +8,16 @@
                     Your career, beautifully organized
                 </span>
 
-                <h1 class="mt-6 text-zinc-700 text-4xl font-bold tracking-tight md:text-6xl leading-[1.1] max-w-xl">
+                <h1
+                    class="mt-6 text-zinc-700 dark:text-zinc-100 text-4xl font-bold tracking-tight md:text-6xl leading-[1.1] max-w-xl">
                     Build the portfolio
                     <span
-                        class="bg-linear-to-r from-zinc-500 to-slate-400 bg-clip-text text-4xl md:text-5xl font-extrabold text-transparent">
+                        class="bg-linear-to-r from-zinc-500 to-slate-400 dark:from-zinc-200 dark:to-slate-500 bg-clip-text text-4xl md:text-5xl font-extrabold text-transparent">
                         that tells your story
                     </span>
                 </h1>
 
-                <p class="mt-6 text-lg md:text-xl text-zinc-500 max-w-xl leading-relaxed">
+                <p class="mt-6 text-lg md:text-xl text-zinc-500 dark:text-zinc-300 max-w-xl leading-relaxed">
                     {{ config('app.name', 'Folio Manager') }} is the all-in-one portfolio manager for professionals.
                     Centralize your personal info, skills, experiences, projects and education — all in one elegant
                     workspace.
@@ -26,13 +27,13 @@
 
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
-                            class="inline-flex gap-4 items-center text-center bg-zinc-900 text-zinc-100 align-middle rounded-xl py-4 px-6 hover:-translate-x-1 hover:scale-90 transition duration-150 ease-linear">
+                            class="inline-flex gap-4 items-center text-center bg-zinc-900 text-zinc-100 dark:text-zinc-900 dark:bg-zinc-300 align-middle rounded-xl py-4 px-6 hover:-translate-x-1 hover:scale-90 transition duration-150 ease-linear">
                             Subscribe for new account
                             <x-arrow-right-icon />
                         </a>
                     @endif
                     <a href="{{ route('login') }}"
-                        class="border text-zinc-900 hover:bg-zinc-100 hover:shadow  align-middle rounded-xl py-4 px-6">
+                        class="border text-zinc-900 hover:bg-zinc-100 hover:shadow dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-900  align-middle rounded-xl py-4 px-6">
                         Start building
                     </a>
                 </div>
@@ -60,7 +61,7 @@
                 <div class="absolute inset-0 bg-muted rounded-3xl blur-2xl opacity-40"></div>
                 <img src="{{ asset('images/hero-portfolio.jpg') }}"
                     alt="Portfolio manager dashboard with profile, skills and projects" width="1536" height="1024"
-                    class="relative rounded-3xl shadow-lg lg:shadow-2xl border border-border/50 motion-safe:animate-float" />
+                    class="relative rounded-3xl shadow-lg lg:shadow-2xl dark:shadow-zinc-100 border border-border/50 motion-safe:animate-float" />
             </div>
         </div>
     </div>
