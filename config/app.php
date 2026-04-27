@@ -56,6 +56,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Application Contact
+    |--------------------------------------------------------------------------
+    |
+    | This contact value can be used throughout the application wherever
+    | a default public-facing contact number is needed.
+    |
+    */
+
+    'contact' => env('APP_CONTACT', '+261 34 93 889 53'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |

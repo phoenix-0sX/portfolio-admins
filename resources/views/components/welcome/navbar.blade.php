@@ -11,7 +11,7 @@
             <div class="hidden md:flex items-center gap-8 font-medium title-secondary">
                 <a href="#features" class="welcome-navlink">Features</a>
                 <a href="#functionalities" class="welcome-navlink">How it works</a>
-                <a href="#cta" class="welcome-navlink">Contact</a>
+                <a href="#contact" class="welcome-navlink">Contact</a>
             </div>
 
             <div class="flex items-center gap-2 font-semibold text-zinc-600 dark:text-zinc-100">

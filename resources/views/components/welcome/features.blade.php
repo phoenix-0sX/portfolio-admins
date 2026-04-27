@@ -58,7 +58,7 @@
                 <div
                     class="group relative rounded-2xl border dark:border-zinc-700 p-6 shadow hover:shadow-xl shadow-zinc-100 dark:shadow-zinc-700 transition-all duration-300 hover:-translate-y-1">
                     <div
-                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-r from-zinc-700 to-slate-500 text-white dark:from-zinc-200 dark:to-slate-500 dark:text-black shadow-lg">
+                        class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-secondary text-white dark:text-black shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">{!! $svg[$feat['icon']] !!}</svg>

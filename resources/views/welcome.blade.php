@@ -15,6 +15,7 @@
         <x-welcome.features />
         <x-welcome.functionalities />
     </main>
+    <x-welcome.contact :contact-phone="config('app.contact')" :contact-email="config('mail.from.address')" />
     <x-welcome.footer />
 </body>
 

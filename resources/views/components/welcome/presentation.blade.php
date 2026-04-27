@@ -10,7 +10,7 @@
 
                 <h1 class="mt-6 title-primary text-4xl font-bold tracking-tight md:text-6xl leading-[1.1] max-w-xl">
                     Build the portfolio
-                    <span class=" bg-gradiant-primary bg-clip-text text-4xl md:text-5xl font-extrabold text-transparent">
+                    <span class="bg-gradient-primary bg-clip-text text-4xl md:text-5xl font-extrabold text-transparent">
                         that tells your story
                     </span>
                 </h1>
@@ -25,13 +25,12 @@
 
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
-                            class="inline-flex gap-4 items-center text-center bg-zinc-900 text-zinc-100 dark:text-zinc-900 dark:bg-zinc-300 align-middle rounded-xl py-4 px-6 hover:-translate-x-1 hover:scale-90 transition duration-150 ease-linear">
+                            class="btn-primary hover:-translate-x-1 hover:scale-90 transition duration-150 ease-linear">
                             Subscribe for new account
                             <x-arrow-right-icon />
                         </a>
                     @endif
-                    <a href="{{ auth()->check() ? route('dashboard') : route('login') }}"
-                        class="border text-zinc-900 hover:bg-zinc-100 hover:shadow dark:border-zinc-700 dark:text-zinc-100 dark:hover:bg-zinc-900  align-middle rounded-xl py-4 px-6">
+                    <a href="{{ auth()->check() ? route('dashboard') : route('login') }}" class="btn-outline-primary">
                         Start building
                     </a>
                 </div>

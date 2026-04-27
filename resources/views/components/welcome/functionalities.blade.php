@@ -28,9 +28,9 @@
 
         <div class="mt-14 grid gap-6 md:grid-cols-3 lg:w-7xl">
             @foreach ($steps as $index => $step)
-                <div class="rounded-2xl border dark:border-zinc-700 p-8 shadow-xl shadow-zinc-100 dark:shadow-zinc-700">
+                <div class="rounded-2xl border dark:border-zinc-700 p-8 shadow-smooth">
                     <span
-                        class="text-sm font-mono bg-gradiant-primary bg-clip-text text-transparent">{{ getNumber($index) }}</span>
+                        class="text-sm font-mono bg-gradient-primary bg-clip-text text-transparent">{{ getNumber($index) }}</span>
                     <h3 class="mt-3 text-xl font-semibold title-primary">{{ $step['title'] }}</h3>
                     <p class="mt-2 text-muted-foreground subtitle-primary">{{ $step['desc'] }}</p>
                 </div>
