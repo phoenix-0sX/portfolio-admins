@@ -3,15 +3,14 @@
         <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
                 <span
-                    class="inline-flex items-center gap-2 rounded-full border backdrop-blur px-4 py-1.5 text-xs font-medium text-slate-600/70 dark:text-slate-300">
+                    class="inline-flex items-center gap-2 rounded-full border backdrop-blur px-4 py-1.5 text-xs font-medium title-secondary">
                     <x-sparkles-icon class="h-3.5 w-3.5 title-primary" />
                     Your career, beautifully organized
                 </span>
 
                 <h1 class="mt-6 title-primary text-4xl font-bold tracking-tight md:text-6xl leading-[1.1] max-w-xl">
                     Build the portfolio
-                    <span
-                        class="bg-linear-to-r from-zinc-500 to-slate-400 dark:from-zinc-200 dark:to-slate-500 bg-clip-text text-4xl md:text-5xl font-extrabold text-transparent">
+                    <span class=" bg-gradiant-primary bg-clip-text text-4xl md:text-5xl font-extrabold text-transparent">
                         that tells your story
                     </span>
                 </h1>

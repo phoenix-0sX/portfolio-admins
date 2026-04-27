@@ -48,16 +48,15 @@
 <section id="features" class="relative overflow-hidden">
     <div class="py-20 lg:py-28 flex flex-col items-center">
         <div class="mx-auto max-w-2xl text-center">
-            <h2 class="text-3xl title-primary md:text-4xl font-bold tracking-tight">Everything your
-                portfolio needs</h2>
-            <p class="mt-4 subtitle-primary text-lg">One workspace for every part of your professional
-                story.</p>
+            <h2 class="welcome-section-title title-primary">Everything your portfolio needs</h2>
+            <p class="welcome-section-subtitle subtitle-primary">One workspace for every part of your professional story.
+            </p>
         </div>
 
         <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:w-7xl">
             @foreach ($features as $feat)
                 <div
-                    class="group relative rounded-2xl bg-gradient-card border  dark:border-zinc-700 p-6 shadow hover:shadow-xl shadow-zinc-100 dark:shadow-zinc-700 transition-all duration-300 hover:-translate-y-1">
+                    class="group relative rounded-2xl border dark:border-zinc-700 p-6 shadow hover:shadow-xl shadow-zinc-100 dark:shadow-zinc-700 transition-all duration-300 hover:-translate-y-1">
                     <div
                         class="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-r from-zinc-700 to-slate-500 text-white dark:from-zinc-200 dark:to-slate-500 dark:text-black shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none"
