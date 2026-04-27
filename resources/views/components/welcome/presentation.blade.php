@@ -4,12 +4,11 @@
             <div>
                 <span
                     class="inline-flex items-center gap-2 rounded-full border backdrop-blur px-4 py-1.5 text-xs font-medium text-slate-600/70 dark:text-slate-300">
-                    <x-sparkles-icon class="h-3.5 w-3.5 text-zinc-700 dark:text-zinc-100" />
+                    <x-sparkles-icon class="h-3.5 w-3.5 title-primary" />
                     Your career, beautifully organized
                 </span>
 
-                <h1
-                    class="mt-6 text-zinc-700 dark:text-zinc-100 text-4xl font-bold tracking-tight md:text-6xl leading-[1.1] max-w-xl">
+                <h1 class="mt-6 title-primary text-4xl font-bold tracking-tight md:text-6xl leading-[1.1] max-w-xl">
                     Build the portfolio
                     <span
                         class="bg-linear-to-r from-zinc-500 to-slate-400 dark:from-zinc-200 dark:to-slate-500 bg-clip-text text-4xl md:text-5xl font-extrabold text-transparent">
@@ -17,7 +16,7 @@
                     </span>
                 </h1>
 
-                <p class="mt-6 text-lg md:text-xl text-zinc-500 dark:text-zinc-300 max-w-xl leading-relaxed">
+                <p class="mt-6 text-lg md:text-xl subtitle-primary max-w-xl leading-relaxed">
                     {{ config('app.name', 'Folio Manager') }} is the all-in-one portfolio manager for professionals.
                     Centralize your personal info, skills, experiences, projects and education — all in one elegant
                     workspace.
@@ -39,7 +38,7 @@
                 </div>
 
                 {{-- TODO: uncomment this section and use it when app finally sailed in prod and have many users --}}
-                {{-- <div class="mt-10 flex flex-wrap items-center gap-6 text-sm text-zinc-500 dark:text-zinc-300">
+                {{-- <div class="mt-10 flex flex-wrap items-center gap-6 text-sm subtitle-primary">
                     <div>
                         <p class="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">12k+</p>
                         <p>Portfolios created</p>
@@ -61,7 +60,7 @@
                 <div class="absolute inset-0 bg-muted rounded-3xl blur-2xl opacity-40"></div>
                 <img src="{{ asset('images/hero-portfolio.jpg') }}"
                     alt="Portfolio manager dashboard with profile, skills and projects" width="1536" height="1024"
-                    class="relative rounded-3xl shadow-lg lg:shadow-2xl dark:shadow-zinc-100 border border-border/50 motion-safe:animate-float" />
+                    class="relative rounded-3xl shadow-lg lg:shadow-2xl dark:shadow-zinc-100 border motion-safe:animate-float" />
             </div>
         </div>
     </div>
