@@ -12,11 +12,11 @@
     <x-welcome.navbar />
     <main class="w-full px-7 lg:px-48">
         <x-welcome.presentation />
+        <x-welcome.features />
+        <x-welcome.functionalities />
     </main>
-
-    @if (Route::has('login'))
-        <div class="h-14.5 hidden lg:block"></div>
-    @endif
+    <x-welcome.contact :contact-phone="config('app.contact')" :contact-email="config('mail.from.address')" />
+    <x-welcome.footer />
 </body>
 
 </html>

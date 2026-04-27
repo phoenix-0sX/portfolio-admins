@@ -8,10 +8,10 @@
                 <span class="md:text-lg tracking-tight">{{ config('app.name', 'Folio Manager') }}</span>
             </a>
 
-            <div class="hidden md:flex items-center gap-8 text-slate-600/70 dark:text-slate-300 font-medium">
-                <a href="#features" class="hover:text-zinc-700 dark:hover:text-slate-300/70">Features</a>
-                <a href="#how" class="hover:text-zinc-700 dark:hover:text-slate-300/70">How it works</a>
-                <a href="#cta" class="hover:text-zinc-700 dark:hover:text-slate-300/70">Contact</a>
+            <div class="hidden md:flex items-center gap-8 font-medium title-secondary">
+                <a href="#features" class="welcome-navlink">Features</a>
+                <a href="#functionalities" class="welcome-navlink">How it works</a>
+                <a href="#contact" class="welcome-navlink">Contact</a>
             </div>
 
             <div class="flex items-center gap-2 font-semibold text-zinc-600 dark:text-zinc-100">
