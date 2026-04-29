@@ -2,8 +2,8 @@
     <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm subtitle-primary">
         <p>&copy; {{ date('Y') }} {{ config('app.name', 'Folio Manager') }}. Craft your career story.</p>
         <div class="flex gap-6 title-secondary">
-            <a href="#" class="welcome-navlink">Privacy</a>
-            <a href="#" class="welcome-navlink">Terms</a>
+            <a href="{{ route('privacy') }}" class="welcome-navlink">Privacy</a>
+            <a href="{{ route('terms') }}" class="welcome-navlink">Terms</a>
         </div>
     </div>
 </footer>

@@ -17,10 +17,12 @@
                     </p>
 
                     <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-                        <a href="#" class="btn-white">
-                            Create your free account
-                            <x-arrow-right-icon />
-                        </a>
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="btn-white">
+                                Create your free account
+                                <x-arrow-right-icon />
+                            </a>
+                        @endif
 
                         <a href="tel:{{ preg_replace('/\s+/', '', $contactPhone) }}" class="btn-white">
                             <x-phone-icon />

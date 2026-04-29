@@ -1,18 +1,24 @@
+@props([
+    'showNavigation' => true,
+])
+
 <header
     class="sticky top-0 z-50 w-full border-b dark:border-zinc-700 backdrop-blur-xl text-sm mb-6 not-has-[nav]:hidden">
     @if (Route::has('login'))
         <nav class="flex h-16 mx-4 md:mx-8 items-center justify-between">
-            <a href="#"
+            <a href="/"
                 class="flex items-center gap-3 font-semibold text-zinc-600 hover:text-zinc-500 dark:text-zinc-100 dark:hover:text-zinc-300">
                 <x-app-logo-icon class="size-5 md:size-8 fill-current text-black dark:text-white" />
                 <span class="md:text-lg tracking-tight">{{ config('app.name', 'Folio Manager') }}</span>
             </a>
 
-            <div class="hidden md:flex items-center gap-8 font-medium title-secondary">
-                <a href="#features" class="welcome-navlink">Features</a>
-                <a href="#functionalities" class="welcome-navlink">How it works</a>
-                <a href="#contact" class="welcome-navlink">Contact</a>
-            </div>
+            @if ($showNavigation)
+                <div class="hidden md:flex items-center gap-8 font-medium title-secondary">
+                    <a href="#features" class="welcome-navlink">Features</a>
+                    <a href="#functionalities" class="welcome-navlink">How it works</a>
+                    <a href="#contact" class="welcome-navlink">Contact</a>
+                </div>
+            @endif
 
             <div class="flex items-center gap-2 font-semibold text-zinc-600 dark:text-zinc-100">
                 @auth
