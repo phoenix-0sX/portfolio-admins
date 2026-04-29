@@ -30,7 +30,8 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
     'postal_code',
     'region',
     'city',
-    'country'
+    'country',
+    'accept_terms_and_policy'
 ])]
 #[Hidden(['password', 'two_factor_secret', 'two_factor_recovery_codes', 'remember_token'])]
 class User extends Authenticatable
@@ -49,7 +50,8 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
             'birthdate' => 'date',
-            'access_level' => 'integer'
+            'access_level' => 'integer',
+            'accept_terms_and_policy' => 'boolean'
         ];
     }
 
