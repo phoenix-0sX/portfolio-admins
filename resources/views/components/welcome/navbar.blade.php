@@ -14,28 +14,28 @@
 
             @if ($showNavigation)
                 <div class="hidden md:flex items-center gap-8 font-medium title-secondary">
-                    <a href="#features" class="welcome-navlink">Features</a>
-                    <a href="#functionalities" class="welcome-navlink">How it works</a>
-                    <a href="#contact" class="welcome-navlink">Contact</a>
+                    <a href="#features" class="welcome-navlink">{{ __('Features') }}</a>
+                    <a href="#functionalities" class="welcome-navlink">{{ __('How it works') }}</a>
+                    <a href="#contact" class="welcome-navlink">{{ __('Contact') }}</a>
                 </div>
             @endif
 
             <div class="flex items-center gap-2 font-semibold text-zinc-600 dark:text-zinc-100">
                 @auth
-                    <a href="{{ route('dashboard') }}"
+                    <a href="{{ auth()->user()->isUser() ? route('profile') : route('dashboard') }}"
                         class="inline-block px-5 py-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-sm text-sm leading-normal">
-                        Dashboard
+                        {{ auth()->user()->isUser() ? __('Profile') : __('Dashboard') }}
                     </a>
                 @else
                     <a href="{{ route('login') }}"
                         class="inline-block px-5 py-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-sm text-sm leading-normal">
-                        Log in
+                        {{ __('Log in') }}
                     </a>
 
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
                             class="inline-block px-5 py-1.5 text-zinc-100 bg-zinc-900 hover:bg-zinc-700 dark:text-zinc-900 dark:bg-zinc-300 dark:hover:bg-zinc-400 rounded-sm text-sm leading-normal">
-                            Register
+                            {{ __('Register') }}
                         </a>
                     @endif
                 @endauth

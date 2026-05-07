@@ -7,7 +7,8 @@ Route::view('/terms', 'terms')->name('terms');
 Route::view('/privacy', 'privacy')->name('privacy');
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::view('dashboard', 'dashboard')->name('dashboard');
+    Route::view('dashboard', 'dashboard')->middleware('redirect.access')->name('dashboard');
+    Route::view('profile', 'profile')->name('profile');
 });
 
 require __DIR__ . '/settings.php';
